@@ -17,10 +17,55 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+*{ padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Lobster;
+ }
 
-h1 {
-   color: rgb(0,0,255);
+html{
+      height: 100%;
+      box-sizing: border-box;
 }
-body {
-   background-color: #cfe2f3ff;
-}
+body{
+position: relative;
+padding-bottom: 10%;
+background-color: #CFE2F3FF;
+background-size: cover;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+      
+display: flex;
+flex-direction: column;
+min-height: 100%;
+box-sizing: inherit;
+ }    
+
+ nav {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;  
+ background: #5274DB; 
+ font-size: 16px;
+ text-align: center;
+ padding-left: 5%;
+ }
+ nav ul li{
+ list-style-type: auto;
+ display: inline-block;
+ padding: 20px;
+ padding-left: 50px;
+ }
+          
+ nav ul li a{
+ color:black;
+ text-decoration: none;
+ }
+          
+ nav ul li a:hover{
+ color:#CCCCFF;
+ transition: 0.2s;
+ }
+   
