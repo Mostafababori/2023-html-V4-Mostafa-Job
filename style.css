@@ -68,4 +68,19 @@ box-sizing: inherit;
  color:#CCCCFF;
  transition: 0.2s;
  }
+
+ sidebar{
+ text-decoration: none;
+ box-sizing: content-box;
+ list-style: none;
+ position: relative;
+ display: inline-block;
+ left: 5px;
+ background-color: #5BFFFF;
+ color: black;
+ padding: 5px;
+ margin: 5px;
+ text-align: center;
+ font-size: 16px;
+ }
    
