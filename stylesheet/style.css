@@ -1,0 +1,312 @@
+/************************* DEBUG SETTINGS *************************/
+
+/* Settings to help find errors in your css
+   uncomment to enable */
+
+/* Add dotted line around all boxes.
+   This makes size of boxes visible.
+   Warning 1: this settings may change your layout.
+   Warning 2: keep the * as selector for all tags when uncommenting. */
+/*  * {border: 1px dotted black;}   */
+  
+/* Add semi-transparant dark background to all boxes
+   The more boxes are on top of eachother the darker tghe background color
+   Warning: keep the * as selector for all tags when uncommenting. */
+/*  * {background-color: rgba(0,0,0,5%);}  */
+
+/************************* YOUR SETTINGS *************************/
+
+/* add your css here, feel free to use comments and order them logically for better readability */
+*{ padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Lobster;
+ }
+
+html{
+      height: 100%;
+      box-sizing: border-box;
+}
+body{
+position: relative;
+padding-bottom: 10%;
+background-color: #CFE2F3FF;
+background-size: cover;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+      
+display: flex;
+flex-direction: column;
+min-height: 100%;
+box-sizing: inherit;
+ }    
+
+ nav {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;  
+ background: #5274DB; 
+ font-size: 16px;
+ text-align: center;
+ padding-left: 5%;
+ }
+ nav ul li{
+ list-style-type: auto;
+ display: inline-block;
+ padding: 20px;
+ padding-left: 50px;
+ }
+          
+ nav ul li a{
+ color:black;
+ text-decoration: none;
+ }
+          
+ nav ul li a:hover{
+ color: black;
+ transition: 0.2s;
+ }
+
+ .sidebar{
+ text-decoration: none;
+ box-sizing: content-box;
+ list-style: none;
+ position: relative;
+ display: inline-block;
+ left: 5px;
+ background-color: #22B79A
+ color:black
+ padding: 5px;
+ margin: 5px;
+ text-align: center;
+ font-size: 16px;
+ }
+
+ .sidebar ul li{
+   padding: 20px;
+   padding-left: 10px;
+   text-align: center;
+   margin: 20px;
+    display: inline-block;
+ }
+
+ header{
+   background-color:#D0ECEA;
+   text-decoration: none;
+   padding: 35px;
+   font-size: 40px;
+ }
+
+ sidebar ul li a:hover{
+   color:#CCCCFF;
+   transition: 0.2s;
+   }
+
+ sidebar ul li a{
+   float: left;
+   display: inline-flex;
+      
+    }
+
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   background-color: #196F3D;
+   color: black;
+   text-align: center;
+   height: 70px;
+   margin-top: 0;
+   padding: 20px;
+   font-size: 17px;
+   }
+ 
+   footer a{
+      color:black;
+     
+    }
+
+   
+    article{
+      font-family: Lobster;
+      font-size: 16px;
+      color: black;
+     text-decoration: none;
+     padding-bottom: 8%;
+      }
+   
+   .lijst B{
+     padding: 30px;
+   }
+
+
+   p{
+      padding-left: 25px;
+      padding-right: 25px;
+      line-height: 27px;
+    
+    }
+
+
+    h2{
+      padding: 10px;
+         margin: 10px;
+     }
+
+   
+    h3{
+      padding-left: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+     }
+   
+     ul{
+      padding-left: 55px;
+     line-height: 25px;
+   }
+
+
+   ol{
+      padding-left: 55px;
+    line-height: 25px;
+  }
+  
+  .googleV{
+    float: left;
+    padding-right: 20px;
+    }
+  
+  .encryptie{
+     float: right;
+     padding: 20px;
+    padding-top: 20px;
+   }
+    
+    .A1{
+      width: 20%;
+    }
+  
+  .video1{
+    float: right;
+    padding-right: 30px;
+  }
+  
+  .video2{
+    float: right;
+   padding-right: 80px;
+    padding-bottom: 50px;
+  }
+  .MIN{
+    float: right;
+    padding-right: 25px;
+  }
+  
+  .EP{
+    float: left;
+    padding: 25px;
+  }
+  
+  .AF{
+    float: right;
+    padding-right: 100px;
+    padding: 20px
+  }
+  
+  .CC{
+  float: left;
+    padding: 10px;
+    padding-left: 10px;
+  }
+  
+  .CAT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .FW{
+    float: right;
+    padding: 20px;
+  } 
+  
+  .SE{
+    float: right;
+    padding: 10px;
+  }
+  
+  .AE{
+     float: right;
+    padding: 10px;
+    padding-right: 60px;
+  }
+  
+  .DD{
+    float: left;
+    padding-right:40px;
+    padding-left: 10px;
+    padding: 25px;
+  }
+  
+  .intro{
+    text-align: center;
+  }
+  
+  table {
+     border: 1px solid black;
+     border-collapse: collapse;
+  }
+   
+  td {
+     border: 1px solid black;
+     padding: 10px;
+  }
+  
+  hr{
+    padding-top: 150px;
+    border: white
+  }
+  
+  .A{
+    padding: 20px;
+  }
+  
+  .video3{
+    float: right;
+    padding-top: 7px;
+    padding-right: 60px;
+    margin-right: 1px; 
+    border: 0px;
+  }
+  
+  .B{
+    padding: 15px;
+    padding-left: 30%;
+    margin-right: 300px;
+  }
+   
+  .CHINA {
+    float: left;
+    left: 10px;
+    padding: 15px;
+    padding-top: 5px;
+    margin-right: 30px;
+  }
+  
+  .C{
+    padding: 20px;
+    width: 45%;
+    float: left;
+  }
+  
+  .WEB{
+    padding: 50px;
+    padding-bottom: 300px;
+    float: right;
+  }
+  
