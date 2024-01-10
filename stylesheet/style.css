@@ -21,7 +21,7 @@
    margin: 0;
    box-sizing: border-box;
    font-family: Lobster;
- }
+   }
 
 html{
       height: 100%;
@@ -76,8 +76,8 @@ box-sizing: inherit;
  position: relative;
  display: inline-block;
  left: 5px;
- background-color: #22B79A
- color:black
+ background-color: #22B79A;
+ color:black;
  padding: 5px;
  margin: 5px;
  text-align: center;
@@ -290,7 +290,7 @@ footer {
     margin-right: 300px;
   }
    
-  .CHINA {
+  .digital_security {
     float: left;
     left: 10px;
     padding: 15px;
@@ -305,8 +305,10 @@ footer {
   }
   
   .WEB{
-    padding: 50px;
-    padding-bottom: 300px;
-    float: right;
+    padding: 15px;
+    float:right;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    right: 10px;
   }
   
