@@ -20,3 +20,137 @@
         <li><a href="begrippenlijst.html" class="hero"><b>Begrippen Lijst</b></a></li>
     </ul>
    </nav>
+
+   <header><b>Maatregelen</b></header>
+   <div class="sidebar">
+     <ul>
+       <li><a href="#Preventie" class="sidebar"><b>Preventie</b></a></li>
+       <li><a href="#Detectie" class="sidebar"><b>Detectie</b></a></li>
+       <li><a href="#Repressie_en_correctie" class="sidebar"><b>Repressie en correctie</b></a></li>
+       <li><a href="#Symmetrische_encryptie" class="sidebar"><b>Symmetrische encryptie</b></a></li>
+       <li><a href="#Asymmetrische_encryptie" class="sidebar"><b>Asymmetrische encryptie</b></a></li>
+       <li><a href="#Zelf_regeling" class="sidebar"><b>Zelf regeling</b></a></li>
+     </ul>
+     <!--de hele sidebar kan nog een andere naam krijgen omdat je de tekst nog moet samenvatten-->
+   </div>
+ 
+   <article>
+     <h2 id="Preventie"> Preventie </h2>
+     <p>Er moeten maatregelen gemaakt worden om problemen te voorkomen, dit noem je <b>preventieve
+         beiveiligingsmaatregelen</b>. De soft- en hardware moet veilig worden gemaakt en de software moet up-to-date
+       zijn.<br>Een voorbeeld van een softwaresecuritymaatregel is <b>sandboxing</b>. Dit is als apps alleen toegang
+       krijgen tot hun eigen geheugen en oplsag, ze krijgen geen toegang tot de rest dat op jouw telefoon zit. Als ze die
+       toegang wel willen moeten ze aan de besturingssysteem toegang vragen, dit zie je als er op je telefoon een app
+       vraagt tot bijvoorbeeld je camera, locatie etc. In een sandbox kan malware geen schade aanrichten.<br> Hoe beter
+       je software is ontworpen, hoe minder kans indringers hebben. Het is wel belangrijk dat de juiste persoon dan wel
+       in de website kan komen, dit kan door goede authenticatie. Wanneer een bedrijf persoongegevens verwerkt, 
+       <img class="FW" src="../images/afbeeldingen/FW.png" title="fire_wall" width="550" height="300"> is het wettelijk
+       verplicht preventieve maatregelen te nemen om de gegevens te beschermen. </p>
+ 
+     <h2 id="Detectie"> Detectie </h2>
+     <p><b>Detectie</b> is erg belangrijk, het controleert op misbruik. Bijvoorbeeld kijken hoevaak iemand opnieuw
+       probeert in te loggen. Een belangrijk helpmiddel bij detectie is een <b>firewall</b>. Die scant al het
+       binnenkomende netwerkverkeer. Firewalls beschermen tegen hackers, malware en spam. Er zijn firewalls voor
+       computers en voor netwerken. <br>Een tweede belangrijk type detectiehulpmiddel is anti-malwaresoftware. Die scant
+       een apparaat op malware en verwijdert die.</p>
+ 
+     <h2 id="Repressie_en_correctie"> Repressie en correctie </h2>
+     <p>Als de aanval is gedetecteerd moet je maatregelen nemen <b>repressie</b> en eventuele schade herstellen
+       <b>correctie</b>. <br>De maatregelen die je moet nemen hangt veel af van hoe heftig de aanval is. Bij sommige
+       malware kan het voldoende zijn om het te verwijderen door de anti-malwaresoftware. Dit zou eventueel kunnen zorgen
+       voor een iets tragere website maar niks ergs. <br>Als de problemen serieuzer zijn, zullen er systemen uitvallen of
+       moeten worden uitgezet.</p>
+ 
+     <img class="SE" src="../afbeeldingen/maatregelen/SE.png"
+         title="encryptieX" width="550" height="250">
+     <h2 id="Symmetrische_encryptie">Symmetrische encryptie </h2>
+     <p>Voor elke vorm van <b>encryptie</b> geldt dat je zonder de sleutel de oorspronkelijke zin niet terug kunt
+       krijgen. <br>Aanvallers proberen de encryptie te breken.  Ze zoeken een manier om de oorspronkelijke zin te vinden, zonder
+       dat ze de sleutel hebben. <br>Er zijn twee manieren om encryptie veiliger te maken.
+     <ul>
+       <li> De sleutel kan slimmer gekozen worden, waardoor het zo veel tijd kost om de sleutel te vinden dat het de
+         moeite niet waard is. </li>
+       <li> Het algortime kan ook verbeterd worden, zodat het heel moeilijk wordt om te kraken. </li>
+     </ul>
+     <p> Encryptie die gebruikmaakt van één sleutel, heet <b>symmetrische encryptie</b>. Die sleutel wordt zowel gebruikt
+       voor het versleutelen als het weer ontsleutelen van de data.</p>
+ 
+     <h2 id="Asymmetrische_encryptie">Asymmetrische encryptie </h2>
+     <img class="AE" src="../afbeeldingen/maatregelen/AE.png" title="encryptieY" width="600" height="520">
+     <p>Bij het versturen van data over het internet is symmetrische encryptie ongeschikt. Want dan moet je de sleutel
+       delen met de ontvanger. Anders kan de ontvanger niets met de versleutelde data.<br>
+       Om dit probleem op te lossen, is <b>asymmetrische encryptie</b> bedacht, ook wel public key encryptie. Dit wordt
+       ook wel public key encryptie genoemd. Bij deze vorm van encryptie zijn er twee sleutels een publieke en een
+       geheime:
+     <ul>
+       <li>Met de publieke sleutel wordt een bericht versleuteld. </li>
+       <li> Met de geheime sleutel kan het versleutelde bericht weer worden ontsleuteld. </li>
+     </ul>
+     <p>Iedereen mag de publieke sleutel weten. Dat is geen probleem, want je versleutelt er alleen maar mee. De geheime
+       sleutel wordt nooit verspreid.<br> Hoe werkt asymmetrische encryptie precies:</p>
+ 
+     <ol>
+       <li>Alice wil een geheim bericht sturen naar Bob. Helaas luistert Eve alle communicatie af. </li>
+       <li>Daarom moeten ze hun berichten versleutelen. Om dat te doen, kiest niet Alice (de verzender van het bericht),
+         maar Bob (de ontvanger) een publieke sleutel én een geheime sleutel. </li>
+       <li>Hij maakt de publieke sleutel openbaar, maar de geheime sleutel verspreidt hij niet. Eve en Alice kennen nu
+         allebei de publieke sleutel. </li>
+       <li>Alice versleutelt met die sleutel haar bericht en stuurt het naar Bob.</li>
+       <li>Alleen Bob kan nu dat bericht ontsleutelen met zijn geheime sleutel. Omdat alleen Bob de geheime sleutel in
+         bezit heeft, kan Eve de berichten niet ontsleutelen.</li>
+ 
+     </ol>
+ 
+     <h2 id="Zelf_regeling">Zelf regeling </h2>
+     <p>Als gebruiker is het erg belangrijk om zelf voor de veiligheid van je computer te zorgen. <br>Je kunt makkelijk
+       een paar maatregelen nemen om het veiliger te maken. <br>Bijvoorbeeld als je werkt met een oude computer, dan
+       wordt het voor de hacker erg makkelijk om in te breken.</p>
+ 
+     <img class="DD" src="../ima/afbeeldingen/maatregelen/DD.jpg" title="ComD" width="540" height="270">
+ 
+     <h3>Absoluut noodzakelijke maatregelen voor je veiligheid</h3>
+     <ul>
+       
+       <li>Installeer updates altijd direct. Als er een lek wordt ontdekt, zorgt de fabrikant meestal dat er snel een
+         update is. Als je die update niet snel genoeg instaleert dan ben je nog steeds kwetsbaar.</li>
+       <li>Zorg voor automatische vergrendeling van je smartphone, tablet en computer. Anders kan een dief zonder
+         moeite bij al je gegevens.</li>
+       <li>Gebruik sterke wachtwoorden en vervang ze minimaal één keer per jaar. Het is lastig om veel wachtwoorden te
+         onthouden. Je kunt daarom het beste een passwordmanager gebruiken.</li>
+       <li>Zorg voor back-ups van je smartphone en je computer (een reservekopie) en van je belangrijkste gegevens. </li>
+       <li>Als je inlogt op een website, controleer dan of je een beveiligde verbinding hebt en of de website geen
+         vreemde URL heeft. <br>Gebruik nooit links in e-mails om in te loggen, maar vul zelf het adres in. Zo voorkom je
+         dat je je gegevens invult op de verkeerde website.</li>
+       <li>Download apps en andere software alleen vanuit de Play Store, App Store of van de website van een betrouwbare
+         fabrikant.</li>
+       <li>Klik niet zomaar op gedeelde linkjes op social media, WhatsApp of e-mails. <br>Het kan om phishing gaan of een
+         link zijn naar een website met malware.</li>
+       
+     </ul>
+     
+     <h3>Verstandige maatregelen om te nemen</h3>
+     <ul>
+       <li>Wees voorzichtig met openbare wifi-hotspots. Die kunnen gemakkelijk worden afgeluisterd. Log nooit ergens in
+         zonder beveiligde verbinding. Voor extra veiligheid kun je gebruikmaken van een VPN-verbinding.</li>
+       <li>Klik niet automatisch op ‘ja’ als een app om toegang vraagt tot bepaalde gegevens op je smartphone. Denk er
+         even over na of dat echt nodig is en of je dat wel wilt.</li>
+       <li>Installeer (extra) anti-malware- en anti-adwaresoftware op je computer en stel in dat deze je apparaat
+         regelmatig scannen.</li>
+       <li>Als je data opslaat op een externe databron, zoals een externe harde schijf of USB-stick, versleutel dan de
+         gegevens.</li>
+       <li>Wees heel voorzichtig met het (permanent) aansluiten van zelfgeprogrammeerde apparaten op het internet, zoals
+         een Arduino en Raspberry Pi.</li>
+     </ul>
+
+   </article>
+
+   <footer>
+    &copy; 2024 |  
+      <a href="mailto:134581@stanislascollege.net" target=_blank> Mostafa Babori</a> 
+           &
+      <a href="mailto:134829@stanislascollege.net" target=_blank> Job Coenemans</a>
+</footer>
+
+</body>
+
+</html>
