@@ -176,8 +176,8 @@ footer {
   }
   
   .googleV{
-    float: left;
-    padding-right: 20px;
+    float: right;
+    padding-left: 20px;
     }
   
   .encryptie{
