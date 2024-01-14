@@ -17,12 +17,11 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
-*{ padding: 0; 
+*{padding: 0; 
    margin: 0;
    box-sizing: border-box;
    font-family: Lobster;
-   }
-
+    }
 html{
       height: 100%;
       box-sizing: border-box;
